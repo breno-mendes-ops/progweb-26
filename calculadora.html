@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Trote Solidario </title>
+        <link rel="stylesheet" href="style.css">       
+        <link rel="icon" type="image/png" href="unifacef logo.png">
+    </head>
+    <body>
+        <nav class="menu">
+            <div class="menu-container">
+                <button class="menu-button">☰</button>
+                <a href="index.html" class="menu-logo"> Trote 2026 </a>
+                <ul class="lista">
+                    <li> <a href="index.html"> Inicio </a> </li>
+                    <li> <a href="introdução.html"> Introdução </a> </li>
+                    <li> <a href="formato.html"> Formato </a> </li>
+                    <li> <a href="equipes.html"> Equipes </a> </li>
+                    <li> <a href="provasemetas.html"> Provas e Metas </a> </li>
+                    <li> <a href="integração.html"> Integração </a> </li>
+                    <li> <a href="cronograma.html"> Cronograma </a> </li>
+                    <li> <a href="calculadora.html"> Calculadora </a> </li>
+                </ul>
+            </div>
+        </nav>
+        <main class="principal">
+            <section class="sec1">
+                <h3>Simulador de Meta Batidas</h3>
+                <div>
+                    <div class="form-group">
+                        <label> Selecione a cor do equipe </label>
+                        <select id="cor">
+                            <option value="Amarela">Amarela</option>
+                            <option value="Cinza">Cinza</option>
+                            <option value="Laranja">Laranja</option>
+                            <option value="Marrom">Marrom</option>
+                            <option value="Preta">Preta</option>
+                            <option value="Rosa">Rosa</option>
+                            <option value="Roxa">Roxa</option>
+                            <option value="Verde">Verde</option>
+                            <option value="Vermelho">Vermelho</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label> Kit Alimentação </label>
+                        <input type="number" id="qtadekits" min="0">
+                    </div>
+                    <div class="form-group">
+                        <label> Suplementos </label>
+                        <input type="number" id="qtadelatas" min="0">
+                    </div>
+                    <div class="form-group">
+                        <label> Leite 1L </label>
+                        <input type="number" id="qtadecaixas" min="0">
+                    </div>
+                    <div class="form-group">
+                        <label> Doação de sangue </label>
+                        <input type="number" id="qtadedoacoes" min="0">
+                    </div>
+                </div>
+            </section>
+            <section class="sec1">
+                <h3>🧮 Simulador de Pontos - Itens avulsos</h3>
+                <p>Insira a quantidade de itens arrecadados para calcular a pontuação total da equipe</p>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label> Arroz (5kg) = 10pts</label>
+                        <input type="number" id="qtadeArroz" min="0">
+                    </div>                        
+                    <div class="form-group">
+                        <labe> Feijão (2kg) = 8pts</labe>
+                        <input type="number" id="qtadeFeijao" min="0">
+                    </div>
+                    <div class="form-group">
+                        <lable> Óleo de Soja (900ml)</lable>
+                        <input type="number" id="qtadeOleo" min="0">
+                    </div>
+                    <div class="form-group">
+                        <lable> Pacote de Macarrão (500g)</lable>
+                        <input type="number" id="qtadeMacarrao" min="0">
+                    </div>
+                </div>
+            </section>
+            <section class="sec1">
+                <button onclick="calcular()"> Calcular Total da Equipe </button> 
+                    <div id="resultado" class="resultado-box">
+                        Pontuação total: 0 pontos
+                    </div>
+            </section>
+        </main>
+        <footer>
+            <p> Coordenação Trote Solidário 2026: trotesolidario@facef.br </p>
+            <p> Uni-FACEF - Centro Universitário Municipal de Franca </p>
+            <p> www.unifacef.com.br </p>
+        </footer>
+        <script src="scripts.js"> </script>
+        <script src="scripts1.js"> </script>
+    </body>
+</html>
